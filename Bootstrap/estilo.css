@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+}
+
+p
+{
+    background-color: pink;
+    font-size: 20px;
+    text-align: center; 
+    color: #fdfcfc;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
