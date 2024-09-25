@@ -1,9 +1,9 @@
-#UTN ISI FRRO. 
+# UTN ISI FRRO. 
 
-###Legajo : 50937
+### Legajo : 50937
 
-###Alumno : Urquiza Nicolás
+### Alumno : Urquiza Nicolás
 
-###Entornos Gráficos - Segundo Cuatrimestre - 2024.
+### Entornos Gráficos - Segundo Cuatrimestre - 2024.
 
-###Prácticas subidas.
+### Prácticas subidas.
