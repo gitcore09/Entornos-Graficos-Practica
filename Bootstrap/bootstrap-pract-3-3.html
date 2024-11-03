@@ -1,0 +1,123 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            @media (min-width: 768px) {
+            .sidebar{background-color: #f5b7b1;height:100%;}
+            .topbar {background-color: lightgreen;height:100px}
+            .box{height:100px}
+            .boxbig{height:150px}
+            }
+            @media (max-width: 767px) {
+            .sidebar{background-color: #f5b7b1;height:100px;}
+            .topbar {background-color: lightgreen;height:100px}
+            .box{height:100px}
+            .boxbig{height:150px}
+            }
+        </style>
+    </head>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <body>
+        <div class="container h-100 d-flex flex-column">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-4" style="background-color:#DAB1DA; height:100px;">
+                Columna 1</div>
+            </div>
+        
+        
+            <div class="row flex-grow-1">
+                <div class="col-12 sidebar col-md-3 col-lg-3 mb-4">
+                Sidebar
+
+                <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#miModal">
+                Abrir Modal
+                </button>
+
+                </div>
+
+                <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="miModalLabel">Modal</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-footer">
+                          <!-- Dos botones con texto -->
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-9 d-flex flex-column">
+                    <div class="row">
+                        <div class="col-12 topbar mb-4 ml-0 ml-md-3" onclick="mostrarAlerta()">Barra</div>
+                    </div>
+
+                    <div id="alerta-exito" class="alert alert-success" role="alert" style="display: none;">
+                        ¡Hecho con Éxito!
+                    </div>
+                      
+                    <script>
+                        function mostrarAlerta() {
+                          const alerta = document.getElementById("alerta-exito");
+                          alerta.style.display = "block"; // Muestra la alerta cambiando la propiedad display a block
+                        }
+                    </script>
+                
+                    <div class="row">
+                        <div class="col-12 box col-md-6 col-lg-6 mb-4 ml-0 ml-md-6" style="background-color: lightsalmon; height:250px">
+                            <div class="card" style="height: 100%; overflow: hidden;">
+                                <img class="card-img-top" src="file:///C:/Users/Nico/Downloads/2016-11-04-869479.png" style="height: 100px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 1</h5>
+                                    <p class="card-text">Deescripción</p>
+                                    <a href="#" class="btn btn-primary">Link</a>
+                                </div>
+                            </div> 
+                        <div class="col-12 box col-md-6 col-lg-6 mb-4 ml-0 ml-md-6" style="background-color: aliceblue;height:250px">
+                            <div class="card" style="height: 100%; overflow: hidden;">
+                                <img class="card-img-top" src="file:///C:/Users/Nico/Downloads/2016-11-04-869479.png" style="height: 100px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text">Deescripción</p>
+                                    <a href="#" class="btn btn-primary">Link</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 box col-md-6 col-lg-6 mb-4 ml-0 ml-md-6" style="background-color: lavender;height:250px">
+                            <div class="card" style="height: 100%; overflow: hidden;">
+                                <img class="card-img-top" src="file:///C:/Users/Nico/Downloads/2016-11-04-869479.png" style="height: 100px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 3</h5>
+                                    <p class="card-text">Deescripción</p>
+                                    <a href="#" class="btn btn-primary">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 box col-md-6 col-lg-3 mb-6 ml-0 ml-md-6" style="background-color: lightsalmon;height:250px">
+                            <div class="card" style="height: 100%; overflow: hidden;">
+                                <img class="card-img-top" src="file:///C:/Users/Nico/Downloads/2016-11-04-869479.png" style="height: 100px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 4</h5>
+                                    <p class="card-text">Deescripción</p>
+                                    <a href="#" class="btn btn-primary">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

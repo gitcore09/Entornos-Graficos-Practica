@@ -1,0 +1,72 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            @media (min-width: 768px) {
+            .sidebar{background-color: #f5b7b1;height:100%;}
+            .topbar {background-color: lightgreen;height:100px}
+            .box{height:100px}
+            .boxbig{height:150px}
+            }
+            @media (max-width: 767px) {
+            .sidebar{background-color: #f5b7b1;height:100px;}
+            .topbar {background-color: lightgreen;height:100px}
+            .box{height:100px}
+            .boxbig{height:150px}
+            }
+        </style>
+    </head>
+
+
+
+    <body>
+        <div class="container h-100 d-flex flex-column">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-4" style="background-color:#DAB1DA; height:100px;">
+                Columna 1</div>
+            </div>
+        
+        
+            <div class="row flex-grow-1">
+                <div class="col-12 sidebar col-md-3 col-lg-3 mb-4">
+                Sidebar
+                </div>
+
+                <div class="col-12 col-md-9 d-flex flex-column">
+                    <div class="row">
+                        <div class="col-12 topbar mb-4 ml-0 ml-md-3" onclick="mostrarAlerta()">Barra</div>
+                    </div>
+
+                    <div id="alerta-exito" class="alert alert-success" role="alert" style="display: none;">
+                        ¡Hecho con Éxito!
+                    </div>
+                      
+                    <script>
+                        function mostrarAlerta() {
+                          const alerta = document.getElementById("alerta-exito");
+                          alerta.style.display = "block"; // Muestra la alerta cambiando la propiedad display a block
+                        }
+                    </script>
+                
+                    <div class="row">
+                        <div class="col-6 box col-md-3 col-lg-3 mb-4 ml-0 ml-md-3" style="background-color: lightsalmon;">Elemento 1</div> 
+                        <div class="col-6 box col-md-3 col-lg-3 mb-4 ml-0 ml-md-3" style="background-color: aliceblue;">Elemento 2</div>
+                        <div class="col-6 box col-md-3 col-lg-3 mb-4 ml-0 ml-md-3" style="background-color: lavender;">Elemento 3</div>
+                        <div class="col-6 box d-md-none ml-0 ml-md-3" style="background-color: lightsalmon;">Elemento 4</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 box d-none d-md-block mb-4 ml-0 ml-md-3" style="background-color: lightsalmon;">Elemento 4</div>
+                        <div class="col-md-3 col-lg-3 box d-none d-md-block mb-4 ml-0 ml-md-3" style="background-color: aliceblue;">Elemento 5</div>
+                        <div class="col-md-3 col-lg-3 box d-none d-md-block mb-4 ml-0 ml-md-3" style="background-color: lavender;">Elemento 6</div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-6 boxbig col-md-3 col-lg-3 ml-0 ml-md-3" style="background-color: gold;">Caja grande</div>
+                        <div class="col-6 boxbig col-md-8 col-lg-8 ml-0 ml-md-1" style="background-color: silver;">Caja grande</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
