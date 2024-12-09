@@ -4,7 +4,7 @@ if (isset($_SESSION['usuario']) && isset($_SESSION['password'])) {
     $usuario = $_SESSION['usuario'];
     $clave = $_SESSION['password'];
 } else {
-    header("Location: formulario.php");
+    header("Location: index.php");
     exit;
 }
 ?>
